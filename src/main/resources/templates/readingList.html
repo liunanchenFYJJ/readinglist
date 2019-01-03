@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reading List</title>
+    <link rel="stylesheet" th:href="@{css/readinglist.css}" />
+</head>
+<body>
+    <h1>readinglist</h1>
+    <img src="img/test.png" />
+    <input type="text" name="username" value="jj lin"/>
+    <div th:unless="${#lists.isEmpty(books)}">
+        <dl th:each="book: ${books}">
+            <dt>
+                <span th:text="${book.title}"></span>
+            </dt>
+        </dl>
+    </div>
+</body>
+</html>

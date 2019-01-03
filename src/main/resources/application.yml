@@ -1,0 +1,13 @@
+spring:
+  # 前端支持热重载
+  thymeleaf:
+    cache: false
+  devtools:
+    restart:
+      enabled: true
+      # 热重载排除目录
+      additional-exclude: /static/**,/templates/**
+# mybatis 配置
+#mybatis:
+#  type-aliases-package: com.liunan.readinglist.entity
+#  mapper-locations: classpath:mapper/*.xml
