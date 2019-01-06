@@ -2,6 +2,11 @@ spring:
   # 前端支持热重载
   thymeleaf:
     cache: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://173.82.212.76:3306/mysite
+    username: root
+    password: root
   devtools:
     restart:
       enabled: true

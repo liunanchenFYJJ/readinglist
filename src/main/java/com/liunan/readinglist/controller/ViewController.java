@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/")
-public class CustomController {
+public class ViewController {
+
 
     @RequestMapping("hh")
     public String test() {
