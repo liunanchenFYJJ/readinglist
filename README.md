@@ -10,3 +10,9 @@ ReadinglistApplication.java -- 启动类
 
 ---
 plugins -- lombok
+
+---
+database(mysql) => entity -- mybatis
+
+---
+template -- thymeleaf

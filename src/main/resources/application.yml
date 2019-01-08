@@ -4,7 +4,7 @@ spring:
     cache: false
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://173.82.212.76:3306/mysite
+    url: jdbc:mysql://173.82.212.76:3306/mysite?useUnicode=true&characterEncoding=utf8
     username: root
     password: root
   devtools:
@@ -13,6 +13,6 @@ spring:
       # 热重载排除目录
       additional-exclude: /static/**,/templates/**
 # mybatis 配置
-#mybatis:
-#  type-aliases-package: com.liunan.readinglist.entity
-#  mapper-locations: classpath:mapper/*.xml
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.liunan.readinglist.entity
