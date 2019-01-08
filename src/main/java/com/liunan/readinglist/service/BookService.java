@@ -1,4 +1,4 @@
-package com.liunan.readinglist.service.impl;
+package com.liunan.readinglist.service;
 
 import com.liunan.readinglist.entity.Book;
 
