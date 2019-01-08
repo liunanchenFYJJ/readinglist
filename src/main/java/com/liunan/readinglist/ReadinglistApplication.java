@@ -19,8 +19,5 @@ public class ReadinglistApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(ReadinglistApplication.class, args);
     }
-
-    public static class Book {
-    }
 }
 
