@@ -18,4 +18,4 @@ database(mysql) => entity -- mybatis
 template -- thymeleaf
 
 ---
-micro-service -- spring-cloud && eureka
+micro-service -- spring-cloud && eureka && feign
