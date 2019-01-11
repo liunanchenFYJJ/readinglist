@@ -1,7 +1,5 @@
-package com.liunan.eurekaclient;
+package com.liunan.eurekaclient.controller;
 
-import com.liunan.eurekaclient.TestbookService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,8 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 @RestController
 @RequestMapping("/")
-public class api {
-
+public class ApiController {
 
 //    @Bean
 //    @LoadBalanced // 负载均衡
@@ -25,12 +22,7 @@ public class api {
         return restTemplate.getForObject(url, String.class);
     }
 
-//    @Autowired
-//    TestbookService testbookService;
-//
-//    @RequestMapping("test")
-//    public String test() {
-//        testbookService.test1();
-//        return "index";
-//    }
+    /**
+     * TODO: openfeign to use api from another server?
+     */
 }

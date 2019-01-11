@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/")
-public class Api {
+public class ApiController {
 
     @GetMapping("book")
     public String pbook() {
