@@ -1,9 +1,7 @@
-package com.liunan.eurekaclient.controller;
+package com.liunan.eurekaclient;
 
+import com.liunan.eurekaclient.TestbookService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,12 +25,12 @@ public class api {
         return restTemplate.getForObject(url, String.class);
     }
 
-
-//    private Testbook testbook;
-
-//    @GetMapping("test")
+//    @Autowired
+//    TestbookService testbookService;
+//
+//    @RequestMapping("test")
 //    public String test() {
-////        return "index";
-//        return testbook.test1();
+//        testbookService.test1();
+//        return "index";
 //    }
 }
