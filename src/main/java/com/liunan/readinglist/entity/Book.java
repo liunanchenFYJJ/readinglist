@@ -13,4 +13,8 @@ public class Book implements Serializable {
     private Long id;
     private String bookName;
 
+    public String getYourOwnBookName() {
+        return "your book name is: " + bookName;
+    }
+
 }
